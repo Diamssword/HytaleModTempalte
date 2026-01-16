@@ -63,7 +63,7 @@ idea.project.settings.runConfigurations {
         mainClass = 'com.hypixel.hytale.Main'
         moduleName = project.idea.module.name + '.main'
         programParameters = "--allow-op --assets=$hytaleHome/install/$patchline/package/game/latest/Assets.zip"
-        jvmArgs = "+AllowEnhancedClassRedefinition"
+        jvmArgs = "-XX:+AllowEnhancedClassRedefinition"
         if (includes_pack.toBoolean()) {
             programParameters += " --mods=${sourceSets.main.java.srcDirs.first().parentFile.absolutePath}"
         }
