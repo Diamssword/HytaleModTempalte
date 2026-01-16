@@ -9,16 +9,7 @@ ext {
     hytaleHome = "${System.getProperty("user.home")}/.var/app/com.hypixel.HytaleLauncher/data/Hytale"
 }
 repositories {
-    exclusiveContent {
-        forRepository {
-            maven {
-                url "https://cursemaven.com"
-            }
-        }
-        filter {
-            includeGroup "curse.maven"
-        }
-    }
+
 }
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(java_version)
@@ -36,8 +27,6 @@ javadoc {
 // the official launcher for now.
 dependencies {
     implementation(files("$hytaleHome/install/$patchline/package/game/latest/Server/HytaleServer.jar"));
-    // implementation("curse.maven:hyxin-1405491:7399430")
-    //implementation(files("./libs/DropDead-0.0.1.jar"))
 }
 
 // Create the working directory to run the server if it does not already exist.
