@@ -1,0 +1,21 @@
+{
+    "Group": "ExampleGroup",
+    "Name": "ExampleMod",
+    "Version": "0.0.1",
+    "Description": "",
+    "Authors": [
+        {
+            "Name": "You!"
+        }
+    ],
+    "Website": "example.org",
+    "ServerVersion": "*",
+    "Dependencies": {
+    },
+    "OptionalDependencies": {
+        
+    },
+    "DisabledByDefault": false,
+    "Main": "com.diamssword.tombale.Tombale",
+    "IncludesAssetPack": true
+}
