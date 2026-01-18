@@ -55,7 +55,9 @@ tasks.register('updatePluginManifest') {
 tasks.named('processResources') {
     dependsOn 'updatePluginManifest'
 }
-
+tasks.named("build") {
+    dependsOn 'updatePluginManifest'
+}
 // Creates a run configuration in IDEA that will run the Hytale server with
 // your plugin and the default assets.
 idea.project.settings.runConfigurations {
